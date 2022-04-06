@@ -4,7 +4,7 @@ Envío de correo con nodemailer
 
 Importar la libreria:
 ```js
-let correo = require('correosenvio');
+const correo = require('correosenvio');
 ```
 Definir los contenidos y llamar a la clase:
 

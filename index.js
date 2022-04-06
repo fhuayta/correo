@@ -11,7 +11,6 @@ class SendEmail {
             }
             return respuesta;
         }
-        //---------------------------INICIO
         let correosDest = '';
         for (let i = 0; i < mensaje.destinatarios.length; i++) {
             correosDest = correosDest + ', ' + mensaje.destinatarios[i];
@@ -52,7 +51,6 @@ class SendEmail {
             }
             return respuesta;
         });
-        //---------------------------
     }
 }
 module.exports = {
