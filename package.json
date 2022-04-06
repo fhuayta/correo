@@ -16,7 +16,7 @@
   "author": "Franz Huayta Quevedo",
   "license": "MIT",
   "dependencies": {
-    "nodemailer": "^5.1.1"
+    "nodemailer": "^6.7.3"
   },
   "bugs": {
     "url": "https://github.com/fhuayta/correo/issues"
