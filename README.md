@@ -1,36 +1,34 @@
 # Envío de correo
 Envío de correo con nodemailer
+## Uso de la libreria
 
-
-## Ejemplo de uso de la libreria
-
-Para llamar a la libreria
+Importar la libreria:
+```js
+let correo = require('correosenvio');
+```
+Definir los contenidos y llamar a la clase:
 
 ```js
-
-let adjuntosBase = [
-    {
-        filename: 'manual_titulo.txt',
+// Definimos variables necesarias
+  let adjuntosBase = [
+     {
+        filename: 'tituloArchivo.txt',
         path: 'data:text/plain;base64,aGVsbG8gd29ybGQ='
-    },
-    {
-        filename: 'manual_titulo_ADJ2.txt',
-        path: 'data:text/plain;base64,aGVsbG8gd29ybGQ='
-    }
-];
-let smtpOpciones = {
-    user: '<USUARIO-MAIL>@dominio.com>',
-    pass: '<PASSWORD-MAIL>',
-    host: 'smtp.<HOST-SMTP>.com',
+     }
+   ];
+  let smtpOpciones = {
+    user: '<CORREO>',
+    pass: '<CONTRASENIA>',
+    host: '<HOST-SMTP>',
     port: 587,
-    idMensaje: '152'
-}
-
-let mensaje = {
-    asunto: 'Asunto del mensaje',
-    cuerpo: 'Cuerpo del mensaje text o html',
-    destinatarios: ["correo1@dominio.com", "correo2@dominio.com", "correo13@dominio.com"]
-}
-
-sendmail(mensaje, adjuntosBase, smtpOpciones);
+    idMensaje: '123'
+  };
+  let mensaje = {
+    asunto: 'Asunto del mensaje...',
+    cuerpo: 'Cuerpo del mensaje...',
+    destinatarios: ["correo1@mensaje.com", "correo2@mensaje.com", "correo3@mensaje.com"]
+  };
+  // Llamamos a la clase y enviamos mail
+  let email = new correo.SendEmail();
+  email.sendMail(mensaje, adjuntosBase, smtpOpciones);
 ```
