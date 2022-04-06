@@ -1,0 +1,25 @@
+{
+  "name": "correo",
+  "version": "1.0.0",
+  "description": "Envio de correos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhuayta/correo.git"
+  },
+  "keywords": [
+    "correo"
+  ],
+  "author": "Franz Huayta Quevedo",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^5.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/fhuayta/correo/issues"
+  },
+  "homepage": "https://github.com/fhuayta/correo#readme"
+}
